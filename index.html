@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculate</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="image-center">
+        <img src="https://i.pinimg.com/originals/05/61/bf/0561bfcc77684359037a0e2fe8058a49.png" alt="icon" width="75px">
+      </div>
+  		<input type="text" id="result" disabled>
+      <div class="column">
+        <input type="button" value="7" onclick="add('7')">
+        <input type="button" value="8" onclick="add('8')">
+        <input type="button" value="9" onclick="add('9')">
+        <input type="button" value="/" onclick="add('/')" id="greenbutt">
+      </div>
+      <div class="column">
+        <input type="button" value="4" onclick="add('4')">
+        <input type="button" value="5" onclick="add('5')">
+        <input type="button" value="6" onclick="add('6')">
+        <input type="button" value="*" onclick="add('*')" id="greenbutt">
+      </div>
+      <div class="column">
+        <input type="button" value="1" onclick="add('1')">
+        <input type="button" value="2" onclick="add('2')">
+        <input type="button" value="3" onclick="add('3')">
+        <input type="button" value="-" onclick="add('-')" id="greenbutt">
+      </div>
+      <div class="column">
+        <input type="button" value="C" onclick="clearResult()" id="greenbutt">
+        <input type="button" value="0" onclick="add('0')">
+        <input type="button" value="=" onclick="calculate()" id="greenbutt">
+        <input type="button" value="+" onclick="add('+')" id="greenbutt">
+      </div>
+      <input type="button" value="&larr;" onclick="deleteLast()" id="greenbutt">
+  	</div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
